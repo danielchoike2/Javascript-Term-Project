@@ -1,0 +1,101 @@
+.btn{
+    padding: 10px;
+    background-color: black;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: dashed 1px;
+}
+.btn-grid{
+  display:grid;
+  grid-template-columns: repeat(2, auto); 
+  margin-top: 30px;
+  gap: 5px; 
+}
+.btn.active, .btn:hover {
+    color: #108f36;
+    cursor: pointer;
+  }
+body{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 85;
+    width: 1000 px;
+    
+}
+#text{
+    border: solid 2px #108f36;
+    background-color: aliceblue;
+    padding: 20px;
+    
+}
+#returnButton{
+
+position: absolute;
+bottom: 10px;
+    
+
+    
+}
+
+h1{
+    position:absolute;
+    top: 0;
+    color:white
+
+}
+#readMe{
+    position:absolute;
+    margin: 90px;
+    bottom: 0;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img{
+    width: 300px;
+    height:300px;
+
+}

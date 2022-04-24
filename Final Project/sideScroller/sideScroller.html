@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="css/sideScroller.css" rel="stylesheet">
+<script defer src = "js/sideScroller.js"></script> 
+</head>
+
+<body onload="startGame()">
+ 
+
+
+
+<div style="text-align:center;width:480px;">
+  <button class="actionbutton" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button class="actionbutton" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button class="actionbutton" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button class="actionbutton" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+</div>
+
+<p>Avoid the sea creatures as long as possible! </p>
+    <p>Navigate the game via the UP, LEFT, RIGHT, & DOWN buttons.</p>
+    <button id = "returnButton"><a href="../interface.html">Main Menu</a></button> 
+    <button id="readMe">ReadMe.txt</button>
+    <input type="button" value="Reload Page" onClick="document.location.reload(true)">
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Welcome to the Oceanic Side Scroller!</p>
+        <p>The main objective of this game is dodge all sea creatures for as long as possible. </p>
+        <P>Press the Reload Page button to reset the game.</P>
+        <p>For future versions I plan make the creatures more organized (not overlapping each other), add music & add sound effects.</p>
+        <p> Goldfish image courtesy of https://www.pngitem.com/download/wioRmT_pixel-art-gold-fish-hd-png-download/ </p>
+        <p> Shark image courtesy of http://pixelartmaker.com/art/5d0fa4e91aca830 </p>
+        <p> Jellyfish image courtesy of https://www.deviantart.com/bluszczyq/art/Pixel-Jellyfish-649357434</p>
+        <p>Background image couresty of https://ansimuz.itch.io/underwater-fantasy-pixel-art-environment</p>
+    
+      </div>
+    </div>
+
+    <script src = "js/sideScrollerReadMe.js"></script>  
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/textAdventure.css" rel="stylesheet">
+    <script defer src = "js/textAdventure.js"></script>
+    <title>The Alpine Forest Text Adventure</title>
+</head>
+<body>
+      
+      <button id="readMe">ReadMe.txt</button>
+      
+      <h1>The Alpine Forest Text Adventure</h1>
+      
+     
+     
+     
+      <div class="container">
+      
+      <div id="text">Text</div>
+      <div id="option-buttons" class="btn-grid">
+      
+ </div>  
+</div>
+</div>
+<button id = "returnButton"><a href="../interface.html">Main Menu</a></button> 
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Hello and welcome to The Alpine Forest Text Adventure!</p>
+    <p>The primary goal of this game is to get to the end of the trail. You must choose the correct options or start from the beggining!</p>
+    <p>For future versions of the game I hope to add an inventory system, more puzzles, music, and character images to each scene.</p>
+    <p>Background image 1 courtesy of http://graphicsdojo.com/awesome-jungle-pack/</p>
+    <p>Background image 2 courtesy of https://edermunizz.itch.io/free-pixel-art-forest?download</p>
+    <p>Background image 3 courtesy of https://www.youtube.com/watch?v=Ic3ZdD5ko7k</p>
+    <p>Background image 4 courtesy of https://www.deviantart.com/rosetop46/art/Pixel-Forest-Background-833108100</p>
+
+  </div>
+</div>
+<script src = "js/textAdventureReadMe.js"></script>
+<script>
+  backgroundArray=["background1.png","background2.png","background3.jpg","background4.jpg"];
+  document.getElementById("option-buttons").addEventListener("click",function(){
+      randomPicture = Math.floor(Math.random() * 4);
+      document.body.style.backgroundImage = "url('media/" + backgroundArray[randomPicture] + "')";
+  });
+  
+</script>
+</body>
+</html>

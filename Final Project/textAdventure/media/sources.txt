@@ -1,0 +1,4 @@
+background 1 = http://graphicsdojo.com/awesome-jungle-pack/
+background 2 = https://edermunizz.itch.io/free-pixel-art-forest?download
+background 3 = https://www.youtube.com/watch?v=Ic3ZdD5ko7k
+background 4 = https://www.deviantart.com/rosetop46/art/Pixel-Forest-Background-833108100
